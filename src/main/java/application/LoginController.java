@@ -66,22 +66,16 @@ public class LoginController {
    }
   }
  }
- 
+
  // HttpServerを起動
  private void startMyServer() {
   MyServer myServer = new MyServer();
-  System.out.println("hoge5");
   myServer.setOnCodeReceivedCallback(this::reseiveCode);
-  System.out.println("hoge6");
   try {
    myServer.start();
-   System.out.println("hoge");
    semaphore.acquire();
-   System.out.println("hoge2");
    connectionManager.handleCreateAPI(code);
-   System.out.println("hoge3");
    closeCurrentWindow();
-   System.out.println("hoge4");
    showMainWindow();
   } catch (IOException | InterruptedException e) {
    e.printStackTrace();
