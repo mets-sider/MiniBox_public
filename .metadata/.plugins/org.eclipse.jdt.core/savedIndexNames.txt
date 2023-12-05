@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\eclipse\pleiades-2022-12-java-win-64bit-jre_20230212\workspace\MiniBox\MiniBox\.metadata\.plugins\org.eclipse.jdt.core
+2759992744.index
+1144178616.index
+1865797976.index

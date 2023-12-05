@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SettingWindowController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="600.0">
+         <children>
+            <RadioButton fx:id="oneTimeButton" mnemonicParsing="false" text="一回のみ実行">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="selectWhen" />
+               </toggleGroup>
+            </RadioButton>
+         </children>
+         <VBox.margin>
+            <Insets bottom="2.0" top="6.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="600.0">
+         <children>
+            <DatePicker fx:id="dateOneTime">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+         <VBox.margin>
+            <Insets bottom="2.0" top="2.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="600.0">
+         <children>
+            <ComboBox fx:id="hourBoxOneTime" prefWidth="65.0">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin></ComboBox>
+            <ComboBox fx:id="minuteBoxOneTime" prefWidth="65.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin></ComboBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="2.0" top="2.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="600.0">
+         <children>
+            <RadioButton fx:id="dailyButton" mnemonicParsing="false" text="曜日を選んで予約" toggleGroup="$selectWhen">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </RadioButton>
+         </children>
+         <VBox.margin>
+            <Insets bottom="2.0" top="2.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="600.0">
+         <children>
+            <CheckBox fx:id="mondayCheckBox" mnemonicParsing="false" text="月">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="tuesdayCheckBox" mnemonicParsing="false" text="火">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="wednesdayCheckBox" mnemonicParsing="false" text="水">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="thursdayCheckBox" mnemonicParsing="false" text="木">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="fridayCheckBox" mnemonicParsing="false" text="金">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="saturdayCheckBox" mnemonicParsing="false" text="土">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="sundayCheckBox" mnemonicParsing="false" text="日">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </CheckBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="2.0" top="2.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <ComboBox fx:id="hourBoxWeek" prefWidth="65.0">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="minuteBoxWeek" prefWidth="65.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="2.0" top="2.0" />
+         </VBox.margin></HBox>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="277.0">
+         <children>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#save" text="保存">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin></Button>
+            <Button fx:id="closeButton" mnemonicParsing="false" onAction="#close" text="閉じる">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="7.0" top="2.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
