@@ -5,7 +5,7 @@ Automatically Upload to BoxStorage
 # 【概要】
 Boxストレージへ自動アップロードするクライアント常駐型アプリです。<br>
 本ツールは企業向けアプリです。
-管理コンソールよりカスタムアプリを作成後、ClientIDとClientSecretを取得、アプリにJsonファイルに読み込ませることで使用可能になります。
+管理コンソールよりカスタムアプリを作成後、ClientIDとClientSecretを取得、アプリのJsonファイルに読み込ませることで使用可能になります。
 カスタムアプリをお持ちの方はconfig.jsonに記入してください。
 
 ## 実行環境
