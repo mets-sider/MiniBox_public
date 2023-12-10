@@ -9,6 +9,7 @@ Boxストレージへ自動アップロードするクライアント常駐型�
 カスタムアプリをお持ちの方はconfig.jsonに記入してください。<br>
 本ツールはjarにエクスポートすることで利用可能になります。<br>
 
+# 画面など
 ##### ログイン
 ![ログイン](https://github.com/mets-sider/MiniBox_public/assets/83691880/8348d69b-e167-4a96-bccd-98b2b3171022)
 ##### BoxWebログイン
