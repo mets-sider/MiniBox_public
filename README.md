@@ -1,6 +1,4 @@
 # MiniBox_public
-Automatically Upload to BoxStorage
-
 
 # 【概要】
 Boxストレージへ自動アップロードするクライアント常駐型アプリです。<br>
